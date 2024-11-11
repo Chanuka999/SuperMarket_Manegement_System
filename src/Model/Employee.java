@@ -1,19 +1,21 @@
 package Model;
 
-public class Employee {
-    private  int id;
-    private String firstName;
-    private String lastName;
-    private  String email;
-    private String phoneNumber;
-    private String address;
-    private double salary;
+public abstract class Employee {
+    protected   int id;
+    protected String firstName;
+    protected String lastName;
+    protected  String email;
+    protected String phoneNumber;
+    protected String address;
+    protected double salary;
+    protected String password;
+    protected Option[] options;
 
     public Employee(){
 
     }
 
-    public Employee(int id,String fistName,String lastName,String email,String phoneNumber,String address,double salary){
+    public Employee(int id,String fistName,String lastName,String email,String phoneNumber,String address,double salary,String password){
         this.id=id;
         this.firstName=fistName;
         this.lastName=lastName;
@@ -21,6 +23,7 @@ public class Employee {
         this.phoneNumber=phoneNumber;
         this.address=address;
         this.salary=salary;
+        this.password=password;
     }
     public int getId(){
         return id;
@@ -63,6 +66,12 @@ public class Employee {
     }
     public void setSalary(double salary){
         this.salary=salary;
+    }
+    public String getPassword(){
+        return  password;
+    }
+    public void setPassword(String password){
+        this.password=password;
     }
 
 }
