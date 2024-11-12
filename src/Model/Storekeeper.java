@@ -16,4 +16,8 @@ public class Storekeeper extends Employee{
         this.password=password;
         this.options = new Option[]{};
     }
+    @Override
+    public int getDepartment(){
+        return 2;
+    }
 }
