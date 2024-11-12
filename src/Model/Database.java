@@ -3,8 +3,8 @@ package Model;
 import java.sql.*;
 
 public class Database {
-    private String user= "user";
-    private String pass="#1#2#3%1%2%3";
+    private String user= "root";
+    private String pass="";
     private String url = "jdbc:mysql://localhost/supermarket";
     private Statement statement;
 
