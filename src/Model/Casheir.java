@@ -16,4 +16,8 @@ public class Casheir extends Employee{
         this.password=password;
         this.options = new Option[]{};
     }
+    @Override
+    public int getDepartment(){
+        return 1;
+    }
 }
