@@ -16,4 +16,8 @@ public class admin extends Employee{
         this.password=password;
         this.options = new Option[]{};
     }
+    @Override
+    public int getDepartment(){
+        return 0;
+    }
 }
